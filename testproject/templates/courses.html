@@ -1,0 +1,30 @@
+{% load static %}
+<link href="{ % https://static maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css % }" rel="stylesheet" id="bootstrap-css">
+<script src="{ % static http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js % }"></script>
+<script src="{ % static http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.jsv % }"></script>
+
+
+<link rel="stylesheet" href="{% static alll.css %}" >
+<div class="container">
+    <br/>
+	<div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8">
+                            <form class="card card-sm" action="display" method="post">
+                                {% csrf_token %}
+                               
+                                    
+                                   
+                                    <div class="col">
+                                        <input class="form-control form-control-lg form-control-borderless" name="search" placeholder="Search person Name">
+                                    </div>
+                                 
+                                    <div class="col-auto">
+                                        <button class="btn btn-lg btn-success" type="submit">Search</button>
+                                    </div>
+                                
+                               
+                            </form>
+                        </div>
+                        
+                    </div>
+</div>
